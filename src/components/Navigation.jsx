@@ -13,8 +13,11 @@ const Navigation = () => {
           <Link as={RouterLink} to="/" color="white" mr={4}>
             Home
           </Link>
-          <Link as={RouterLink} to="/courses" color="white">
+          <Link as={RouterLink} to="/courses" color="white" mr={4}>
             Courses
+          </Link>
+          <Link as={RouterLink} to="/code-editor" color="white" ml={4}>
+            Code Editor
           </Link>
         </Flex>
       </Flex>
