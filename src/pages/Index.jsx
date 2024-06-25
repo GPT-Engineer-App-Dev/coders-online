@@ -1,7 +1,10 @@
 import { Container, Text, VStack, Heading, Box, Button, Flex } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import { FaCode, FaChalkboardTeacher, FaLaptopCode } from "react-icons/fa";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <Container centerContent maxW="container.lg" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={8}>
@@ -40,7 +43,7 @@ const Index = () => {
             </Text>
           </Box>
         </Flex>
-        <Button colorScheme="teal" size="lg" mt={8}>
+        <Button colorScheme="teal" size="lg" mt={8} onClick={() => navigate('/courses')}>
           Get Started
         </Button>
       </VStack>
