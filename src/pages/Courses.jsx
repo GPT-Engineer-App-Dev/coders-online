@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Heading, SimpleGrid, Box, Text, Button, useToast } from '@chakra-ui/react';
+import CodeEditor from '../components/CodeEditor';
 
 const coursesData = [
   { id: 1, title: 'Introduction to Programming', description: 'Learn the basics of programming' },
@@ -53,6 +54,12 @@ const Courses = () => {
           </Box>
         ))}
       </SimpleGrid>
+      <Box mt={8}>
+        <Heading as="h2" size="xl" mb={4}>
+          Code Editor
+        </Heading>
+        <CodeEditor />
+      </Box>
     </Container>
   );
 };
